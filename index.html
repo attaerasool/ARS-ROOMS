@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopWala</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopWala - Your Online Store</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f5f5f5; color: #222; }
+    header { background: #0078D7; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 24px; }
+    nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero { background: url('https://images.unsplash.com/photo-1515165562835-c4c73c7c4b3a?auto=format&fit=crop&w=1600&q=60') center/cover; color: white; text-align: center; padding: 100px 20px; }
+    .hero h2 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; }
+
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; }
+    .product { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px; text-align: center; transition: 0.2s; }
+    .product:hover { transform: translateY(-5px); }
+    .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .product h3 { margin: 10px 0; }
+    .product p { color: #555; }
+    .product button { background: #0078D7; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    .product button:hover { background: #005fa3; }
+
+    footer { background: #111; color: #ccc; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
 </head>
 <body>
-    <main>
-    <p>shopWala</p>
+
+  <header>
     <h1>ShopWala</h1>
-    <h2>ShopWala</h2>
-    <h3>ShopWala</h3>
-    <h4>ShopWala</h4>
-    <h5>ShopWala</h5>
-    <h6>ShopWala</h6>
-    <br>
-    <hr>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <a href="https://www.youtube.com/">YouTube</a>
+  <section class="hero">
+    <h2>Welcome to ShopWala</h2>
+    <p>Find everything you need at the best prices.</p>
+  </section>
 
-<b>Flat 70</b>
+  <section id="products" class="products">
+    <!-- Example Product Cards -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1512499617640-c2f999098e95?auto=format&fit=crop&w=500&q=60" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>High-quality sound and comfort.</p>
+      <button onclick="window.open('https://example.com/product1','_blank')">Buy Now</button>
+    </div>
 
-<subscript>%</subscript>
-<table>
-        <tr>
-           
-            <th>Name</th>
-            <th>Roll Number</th>
-        </tr>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=60" alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p>Track fitness and stay connected.</p>
+      <button onclick="window.open('https://example.com/product2','_blank')">Buy Now</button>
+    </div>
 
-        <tr>
-            <th>Attaerasool</th>
-            <th>39</th>
-        </tr>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1606813902599-97d4cf274fd9?auto=format&fit=crop&w=500&q=60" alt="Laptop">
+      <h3>Modern Laptop</h3>
+      <p>Powerful and lightweight for work and play.</p>
+      <button onclick="window.open('https://example.com/product3','_blank')">Buy Now</button>
+    </div>
+  </section>
 
-</table>
+  <footer id="contact">
+    <p>&copy; 2025 ShopWala. All rights reserved.</p>
+    <p>Email: support@shopwala.com</p>
+  </footer>
 
-<article>
+  <script>
+    // Example: Add future JS here (like cart, admin, or filters)
+    console.log('ShopWala loaded successfully.');
+  </script>
 
-    <h3>
-    <subscript>Rs</subscript> 1700
-    </h3>
-
-</article>
-
-</main>
-<footer>
-
-</footer>
 </body>
 </html>
